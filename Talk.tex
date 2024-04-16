@@ -600,6 +600,47 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \end{idea}
 \end{frame}
 
+\begin{frame}
+%\begin{figure}[htbp]
+	%\centering
+		%\includegraphics[width=0.5\textwidth]{Foliation connection.png}
+	%%\caption{$\mathcal{F}$-connections}
+	%\label{fig:FoliationconnectionSieben}
+%\end{figure}
+\begin{idea}
+Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
+\bas
+\mleft[ \mathbb{H}(X) + \overline{\nu}, \mathbb{H}\mleft({X^\prime}\mright) + \overline{\mu} \mright]
+&=
+\mathbb{H}\mleft(\mleft[ X, X' \mright]\mright) + 
+%\overline{\vphantom{d}
+\dots
+%}
+\\
+&=
+\underbrace{\mleft[ \mathbb{H}(X), \mathbb{H}\mleft({X^\prime}\mright) \mright]}_{\rightsquigarrow \text{ curvature}}
+\\
+&\hspace{1cm}
+	+ \underbrace{\mleft[ \mathbb{H}(X), \overline{\mu} \mright]
+	- \mleft[ \mathbb{H}\mleft({X^\prime}\mright), \overline{\nu} \mright]}_{\rightsquigarrow \text{ connection}}
+	+ \overline{\mleft[ \nu, \mu \mright]}
+\eas
+\end{idea}
+
+\begin{idea}[$\dotsc \in \tau$]
+We need:
+\begin{enumerate}
+	\item Lie algebra bundle $\tau$ with structure $\tau_l$
+	\item A horizontal lift $\mathbb{H}$ into $\mathcal{T}$ satisfying
+		\bas
+		\text{Curvature:}&& \mleft[ \mathbb{H}(X), \mathbb{H}\mleft({X^\prime}\mright) \mright] - \mathbb{H}\mleft(\mleft[ X, X' \mright]\mright)  &\in \tau
+		\\
+		\text{Connection:}&& \mleft[ \mathbb{H}(X), \overline{\mu} \mright] &\in \tau
+		\eas
+\end{enumerate}
+\end{idea}
+\end{frame}
+
 \begin{frame}{Summary}
 %\begin{tikzcd}[ampersand replacement=\&]
 %\&\arrow{dl} \text{Foliation } \mathcal{F} \arrow{dr}\& 
@@ -1203,6 +1244,10 @@ In the simply connected case, the following are equivalent:
 \\
 \&\{\text{Connection on } \mathup{Sym}(\tau)\} \arrow{uu} \arrow{ul}\arrow{ur}\&
 \end{tikzcd}
+
+\end{frame}
+
+\begin{frame}{Examples}
 
 \end{frame}
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  16 APR 2024 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  16 APR 2024 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1605,7 +1605,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 160--160
 [][][][]  
  []
 
-<NCTS.png, id=108, 562.60187pt x 174.6525pt>
+<NCTS.png, id=112, 562.60187pt x 174.6525pt>
 File: NCTS.png Graphic file (type png)
 <use NCTS.png>
 Package pdftex.def Info: NCTS.png  used on input line 160.
@@ -1634,7 +1634,7 @@ Overfull \vbox (39.06465pt too high) detected at line 160
 
 {C:/Users/kelru/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 rm.enc} <./NCTS.png>]
-<Research circles I.pdf, id=176, 384.30576pt x 158.05048pt>
+<Research circles I.pdf, id=182, 384.30576pt x 158.05048pt>
 File: Research circles I.pdf Graphic file (type pdf)
 <use Research circles I.pdf>
 Package pdftex.def Info: Research circles I.pdf  used on input line 173.
@@ -1751,7 +1751,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 334--334
 [][][][]  
  []
 
-<Foliation example.png, id=855, 700.6175pt x 444.15938pt>
+<Foliation example.png, id=891, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
 Package pdftex.def Info: Foliation example.png  used on input line 334.
@@ -1768,7 +1768,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 380--380
 [][][][]  
  []
 
-<Foliation connection.png, id=938, 672.01062pt x 390.45876pt>
+<Foliation connection.png, id=978, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
 Package pdftex.def Info: Foliation connection.png  used on input line 380.
@@ -1816,7 +1816,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
 [13
 
 ]
-<snake.png, id=1213, 609.27625pt x 503.8825pt>
+<snake.png, id=1265, 609.27625pt x 503.8825pt>
 File: snake.png Graphic file (type png)
 <use snake.png>
 Package pdftex.def Info: snake.png  used on input line 470.
@@ -1860,7 +1860,11 @@ Package pdftex.def Info: Foliation connection.png  used on input line 601.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [19
 
-] [20
+]
+Overfull \vbox (3.67786pt too high) detected at line 642
+ []
+
+[20
 
 ] [21
 
@@ -1868,8 +1872,10 @@ Package pdftex.def Info: Foliation connection.png  used on input line 601.
 
 ] [23
 
+] [24
+
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 700--700
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 741--741
 [][][][]  
  []
 
@@ -1878,30 +1884,28 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[24
-
-]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 795--795
- [] 
- []
-
 [25
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 795--795
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 836--836
  [] 
  []
 
 [26
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 865--865
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 836--836
  [] 
  []
 
 [27
 
-] [28
+]
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 906--906
+ [] 
+ []
+
+[28
 
 ] [29
 
@@ -1915,8 +1919,10 @@ Overfull \hbox (7.06024pt too wide) in paragraph at lines 865--865
 
 ] [34
 
+] [35
+
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1114--1114
 [][][][]  
  []
 
@@ -1925,16 +1931,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[35
+[36
 
 ]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[36
-
-] [37
+[37
 
 ] [38
 
@@ -1960,6 +1964,10 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ] [49
 
+] [50
+
+] [51
+
 ]
 \tf@nav=\write7
 \openout7 = `Talk.nav'.
@@ -1982,10 +1990,10 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51677 strings out of 474461
- 1194704 string characters out of 5750453
- 3103084 words of memory out of 5000000
- 72966 multiletter control sequences out of 15000+600000
+ 51691 strings out of 474461
+ 1195049 string characters out of 5750453
+ 3104418 words of memory out of 5000000
+ 72976 multiletter control sequences out of 15000+600000
  640667 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,123p,1131b,8501s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2006,9 +2014,9 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 am Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Roaming/MiKT
 eX/2.9/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (49 pages, 1353837 bytes).
+Output written on Talk.pdf (51 pages, 1397754 bytes).
 PDF statistics:
- 4125 PDF objects out of 4296 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 2006 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4477 PDF objects out of 5155 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 2072 words of extra memory for PDF output out of 10000 (max. 10000000)
 
