@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  16 APR 2024 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  17 APR 2024 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1605,7 +1605,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 160--160
 [][][][]  
  []
 
-<NCTS.png, id=112, 562.60187pt x 174.6525pt>
+<NCTS.png, id=114, 562.60187pt x 174.6525pt>
 File: NCTS.png Graphic file (type png)
 <use NCTS.png>
 Package pdftex.def Info: NCTS.png  used on input line 160.
@@ -1634,7 +1634,7 @@ Overfull \vbox (39.06465pt too high) detected at line 160
 
 {C:/Users/kelru/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 rm.enc} <./NCTS.png>]
-<Research circles I.pdf, id=182, 384.30576pt x 158.05048pt>
+<Research circles I.pdf, id=185, 384.30576pt x 158.05048pt>
 File: Research circles I.pdf Graphic file (type pdf)
 <use Research circles I.pdf>
 Package pdftex.def Info: Research circles I.pdf  used on input line 173.
@@ -1747,14 +1747,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [9
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 334--334
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 333--333
 [][][][]  
  []
 
-<Foliation example.png, id=891, 700.6175pt x 444.15938pt>
+<Foliation example.png, id=909, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
-Package pdftex.def Info: Foliation example.png  used on input line 334.
+Package pdftex.def Info: Foliation example.png  used on input line 333.
 (pdftex.def)             Requested size: 215.10196pt x 136.35962pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1764,15 +1764,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [10
 
  <./Foliation example.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 380--380
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 340--340
 [][][][]  
  []
 
-<Foliation connection.png, id=978, 672.01062pt x 390.45876pt>
-File: Foliation connection.png Graphic file (type png)
-<use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 380.
-(pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
@@ -1780,102 +1778,124 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [11
 
+]
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[12]
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 388--388
+[][][][]  
+ []
+
+<Foliation connection.png, id=1129, 672.01062pt x 390.45876pt>
+File: Foliation connection.png Graphic file (type png)
+<use Foliation connection.png>
+Package pdftex.def Info: Foliation connection.png  used on input line 388.
+(pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[13
+
  <./Foliation connection.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 399--399
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 407--407
 [][][][]  
  []
 
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 399.
+Package pdftex.def Info: Foliation connection.png  used on input line 407.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[12
+[14
 
 ]
-Overfull \hbox (21.45601pt too wide) in paragraph at lines 425--425
+Overfull \hbox (21.45601pt too wide) in paragraph at lines 433--433
  [] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 425.
+(Font)              <14.4> on input line 433.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 425.
+(Font)              <10> on input line 433.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 425.
+(Font)              <7> on input line 433.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 425.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 433.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 425.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 433.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 425.
-[13
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 433.
+[15
 
 ]
-<snake.png, id=1265, 609.27625pt x 503.8825pt>
+<snake.png, id=1422, 609.27625pt x 503.8825pt>
 File: snake.png Graphic file (type png)
 <use snake.png>
-Package pdftex.def Info: snake.png  used on input line 470.
+Package pdftex.def Info: snake.png  used on input line 478.
 (pdftex.def)             Requested size: 307.28987pt x 254.13957pt.
 
-Overfull \vbox (40.52554pt too high) detected at line 470
+Overfull \vbox (40.52554pt too high) detected at line 478
  []
 
-[14
+[16
 
- <./snake.png>] [15
+ <./snake.png>] [17
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 525.
+Package pdftex.def Info: Foliation connection.png  used on input line 533.
 (pdftex.def)             Requested size: 122.91406pt x 71.41154pt.
- [16
+ [18
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 555.
+Package pdftex.def Info: Foliation connection.png  used on input line 563.
 (pdftex.def)             Requested size: 122.91406pt x 71.41154pt.
- [17
-
-]
-File: Foliation connection.png Graphic file (type png)
-<use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 573.
-(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 573.
- (C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [18
-
-]
-File: Foliation connection.png Graphic file (type png)
-<use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 601.
-(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [19
 
 ]
-Overfull \vbox (3.67786pt too high) detected at line 642
+File: Foliation connection.png Graphic file (type png)
+<use Foliation connection.png>
+Package pdftex.def Info: Foliation connection.png  used on input line 581.
+(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 581.
+ (C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [20
+
+]
+File: Foliation connection.png Graphic file (type png)
+<use Foliation connection.png>
+Package pdftex.def Info: Foliation connection.png  used on input line 609.
+(pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
+ [21
+
+]
+Overfull \vbox (3.67786pt too high) detected at line 650
  []
 
-[20
-
-] [21
-
-] [22
+[22
 
 ] [23
 
 ] [24
 
+] [25
+
+] [26
+
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 741--741
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 749--749
 [][][][]  
  []
 
@@ -1884,32 +1904,28 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[25
-
-]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 836--836
- [] 
- []
-
-[26
-
-]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 836--836
- [] 
- []
-
 [27
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 906--906
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 844--844
  [] 
  []
 
 [28
 
-] [29
+]
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 844--844
+ [] 
+ []
 
-] [30
+[29
+
+]
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 914--914
+ [] 
+ []
+
+[30
 
 ] [31
 
@@ -1921,8 +1937,12 @@ Overfull \hbox (7.06024pt too wide) in paragraph at lines 906--906
 
 ] [35
 
+] [36
+
+] [37
+
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1114--1114
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1122--1122
 [][][][]  
  []
 
@@ -1931,18 +1951,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[36
+[38
 
 ]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[37
-
-] [38
-
-] [39
+[39
 
 ] [40
 
@@ -1968,6 +1984,10 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ] [51
 
+] [52
+
+] [53
+
 ]
 \tf@nav=\write7
 \openout7 = `Talk.nav'.
@@ -1983,6 +2003,10 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Talk.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Talk.run.xml'.
@@ -1990,10 +2014,10 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51691 strings out of 474461
- 1195049 string characters out of 5750453
- 3104418 words of memory out of 5000000
- 72976 multiletter control sequences out of 15000+600000
+ 51699 strings out of 474461
+ 1195133 string characters out of 5750453
+ 3107075 words of memory out of 5000000
+ 72980 multiletter control sequences out of 15000+600000
  640667 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,123p,1131b,8501s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2014,9 +2038,9 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 am Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Roaming/MiKT
 eX/2.9/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (51 pages, 1397754 bytes).
+Output written on Talk.pdf (53 pages, 1427233 bytes).
 PDF statistics:
- 4477 PDF objects out of 5155 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
+ 4695 PDF objects out of 5155 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
  2072 words of extra memory for PDF output out of 10000 (max. 10000000)
 
