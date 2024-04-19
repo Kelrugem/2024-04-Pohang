@@ -294,73 +294,7 @@ We will denote a partitionifold by $L_\bullet$, $p \mapsto L_p$, where $L_p$ is 
 \end{remark}
 \end{frame}
 
-{
-\setbeamertemplate{footline}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}
-		Sources
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}
-		Graphic by Camille Laurent-Gengoux, Ruben Louis, and Leonid Ryvkin.
-  \end{beamercolorbox}%
-  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    %%\insertframenumber{} 
-		%%/ \inserttotalframenumber\hspace*{2ex} 
-  %\end{beamercolorbox}
-	}%
-  \vskip0pt%
-}
-
 \begin{frame}
-\begin{minipage}[]{0.45\textwidth}
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=1\textwidth]{D:/Simon/PostDoc/Taiwan/2024-04-Pohang/magnetique.png}
-	\caption{The magnetic partition}
-	\label{fig:magnetique}
-\end{figure}
-\end{minipage}
-\hfill
-\begin{minipage}[]{0.45\textwidth}
-\begin{remark}
-A partitionifold with:
-\begin{itemize}
-	\item All leaves are of the same dimension.
-	\item \textbf{But:} It lacks regularity!
-\end{itemize}
-\end{remark}
-\end{minipage}
-\end{frame}
-
-\begin{frame}
-\begin{minipage}[]{0.45\textwidth}
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=1\textwidth]{D:/Simon/PostDoc/Taiwan/2024-04-Pohang/Lonely Lasagna.png}
-	\caption{Isolated lasagna in a spaghetti dish}
-	\label{fig:LonelyLasagna}
-\end{figure}
-\end{minipage}
-\hfill
-\begin{minipage}[]{0.45\textwidth}
-\begin{remark}
-A partitionifold with:
-\begin{itemize}
-	\item Dimension is now different.
-	\item \textbf{But:} Also no regularity!
-\end{itemize}
-\end{remark}
-\pause
-\begin{remark}[Isolated spaghetti in a Lasagna dish]
-\end{remark}
-\end{minipage}
-\end{frame}
-}
 
 \renewcommand\insertreferences{{\tiny  Peter Stefan, Accessible sets, orbits, and foliations with singularities. \textit{Proc.\ London Math.\ Soc.}, 29, 1974.
 \newline
