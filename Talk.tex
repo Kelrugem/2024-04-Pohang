@@ -320,7 +320,7 @@ We will denote a partitionifold by $L_\bullet$, $p \mapsto L_p$, where $L_p$ is 
 \begin{minipage}[]{0.45\textwidth}
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1\textwidth]{D:/Simon/PostDoc/Taiwan/2024-04-Pohang/magnetique.png}
+		\includegraphics[width=1\textwidth]{magnetique.png}
 	\caption{The magnetic partition}
 	\label{fig:magnetique}
 \end{figure}
@@ -341,7 +341,7 @@ A partitionifold with:
 \begin{minipage}[]{0.45\textwidth}
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1\textwidth]{D:/Simon/PostDoc/Taiwan/2024-04-Pohang/Lonely Lasagna.png}
+		\includegraphics[width=1\textwidth]{Lonely Lasagna.png}
 	\caption{Isolated lasagna in a spaghetti dish}
 	\label{fig:LonelyLasagna}
 \end{figure}
@@ -356,15 +356,57 @@ A partitionifold with:
 \end{itemize}
 \end{remark}
 \pause
-\begin{remark}[Isolated spaghetti in a Lasagna dish]
+\begin{remark}
+Isolated spaghetti in a lasagna dish: Regularity!
 \end{remark}
 \end{minipage}
 \end{frame}
 }
 
-\renewcommand\insertreferences{{\tiny  Peter Stefan, Accessible sets, orbits, and foliations with singularities. \textit{Proc.\ London Math.\ Soc.}, 29, 1974.
-\newline
-Héctor J. Sussmann, Orbits of families of vector fields and integrability of distributions. \textit{Trans.\ Amer.\ Math.\ Soc.}, 180, 1973}}
+%\renewcommand\insertreferences{{\tiny  Peter Stefan, Accessible sets, orbits, and foliations with singularities. \textit{Proc.\ London Math.\ Soc.}, 29, 1974.
+%\newline
+%Héctor J. Sussmann, Orbits of families of vector fields and integrability of distributions. \textit{Trans.\ Amer.\ Math.\ Soc.}, 180, 1973}}
+
+\begin{frame}
+\begin{definition}[Smooth partitionifold]
+A smooth partitionifold $L_\bullet$ is smooth, if there is for all $p \in M$ and every vector $u \in \mathrm{T}_p L_p$ a vector field $X$ tangent to $L_\bullet$ with
+\bes
+X_p = u.
+\ees
+\end{definition}
+
+\pause
+
+\begin{remark}
+This definition is okay, but not widely used: It still has a problem...
+\end{remark}
+\end{frame}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+
+\begin{example}[Vector fields not necessarily finitely generated]
+Consider the following smooth partitionifold:
+\begin{itemize}
+	\item $M = \mathbb{R}$;
+	\item 0-dimensional leaves:
+	\bes
+	\{1\}, \mleft\{\frac{1}{2}\mright\}, \mleft\{\frac{1}{3}\mright\}, \dots, \mleft\{\frac{1}{n}\mright\}, \dots, \{0\};
+	\ees
+	\item 1-dimensional leaves: Remaining open intervals.
+\end{itemize}
+\end{example}
+
+\pause
+
+\begin{remark}
+One has a sort of ``infinitesimal leaf'' next to $\{0\}$. 
+
+Technically: Tangent vectors of $L_\bullet$ are locally not finitely generated around 0.
+\end{remark}
+\end{frame}
+}
 
 \begin{frame}
 \begin{definition}[Smooth singular foliation]
