@@ -32,6 +32,9 @@
 %Für die ganzen Diagramme
 \usepackage{pgfplots}
 \usepackage{graphicx} %Für raisebox, vertical displacement of figures
+%% Custom arrows
+\newcommand*{\Searrow}{\rotatebox[origin=c]{315}{\(\Longrightarrow\)}}
+\newcommand*{\Nearrow}{\rotatebox[origin=c]{45}{\(\Longrightarrow\)}}
 \usetikzlibrary{decorations.markings, decorations.text,calc,arrows.meta}
 
 \definecolor{Gray}{gray}{0.85}
@@ -406,6 +409,26 @@ One has a sort of ``infinitesimal leaf'' next to $\{0\}$.
 Technically: Tangent vectors of $L_\bullet$ are locally not finitely generated around 0.
 \end{remark}
 \end{frame}
+
+\begin{frame}
+Recall:
+
+\begin{theorem}[Frobenius Theorem]
+Every integrable subbundle $E$ of $\mathrm{T} M$ corresponds to a regular foliation in $M$.
+\end{theorem}
+
+\begin{remark}
+Integrable:
+\bes
+[X, Y] \in \Gamma(E)
+\ees
+for all $X, Y \in \Gamma(E)$.
+\end{remark}
+\pause
+\begin{remark}
+Alternatively: An involutive submodule of $\mathfrak{X}(M)$, or equivalently of $\mathfrak{X}_c(M)$.
+\end{remark}
+\end{frame}
 }
 
 \begin{frame}
@@ -448,31 +471,49 @@ A \textbf{smooth singular foliation $\mathcal{F}$} on a smooth manifold is a sub
 	\item it is \textbf{involutive}, \textit{i.e.\ $[\mathcal{F}, \mathcal{F}] \subset \mathcal{F}$},
 	\item it is \textbf{stable under $C^\infty(M)$-multiplication}, \textit{i.e.\ $fX \in \mathcal{F}$ for all $f \in C^\infty(M)$ and $X \in \mathcal{F}$},
 	\item it is \textbf{locally finitely generated}, \textit{i.e.\ around each $p \in M$ there is an open neighbourhood $U$ and a finite family $\mleft( X^i \mright)_i^{r}$ ($X^i \in \mathcal{F}$) such that for all $X \in \mathcal{F}$ there are $f_i \in C^\infty(M)$ satisfying on $U$}.
-	\bas
+	\bes
 	X = \sum_i f_i X^i.
-	\eas
+	\ees
 \end{itemize}
 \end{definition}
 \end{frame}
 
 \begin{frame}
 \begin{remark}[Leaves]
-Following the flows in $\mathcal{F}$, this gives rise to a partition of connected immersed submanifolds in $M$.
+We have an induced smooth partitionifold $L_\bullet$,
+\bes
+\mathcal{F} \Rightarrow L_\bullet,
+\ees
+but $\mathcal{F}$ also encodes the information about the generators,
+\bes
+\begin{array}{c@{\ }c@{\ }c}
+\mathcal{F}_1 &&\\
+&\Searrow&\\
+&& L_\bullet \\
+&\Nearrow&\\
+\mathcal{F}_2&&
+\end{array}
+\ees
 \end{remark}
 
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[width=.70\textwidth]{Foliation example.png}
-	\label{fig:Foliation example}
-\end{figure}
+%\begin{figure}[htbp]
+	%\centering
+		%\includegraphics[width=.70\textwidth]{Foliation example.png}
+	%\label{fig:Foliation example}
+%\end{figure}
 
 \end{frame}
 
-\subsection{Discussing and justifying the definition}
 {
-\setbeamertemplate{}
+\setbeamertemplate{footline}{}
 
 \begin{frame}{Why locally finitely generated?}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.6\textwidth]{Infinite comb.png}
+	\caption{Infinite comb}
+	\label{fig:Infinite comb}
+\end{figure}
 
 \end{frame}
 
@@ -511,6 +552,17 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 %}
 
 \subsection{Idea: Relation to gauge theory}
+
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\thispagestyle{empty}
+\begin{center}
+\textbf{\Large First step towards classification}
+\end{center}
+\end{frame}
+}
 
 \renewcommand\insertreferences{{\tiny Camille Laurent-Gengoux and Leonid Ryvkin, The holonomy of a singular leaf, \newline \textit{Selecta Mathematica 28}, no.\ 2, 45, 2022.}}
 
@@ -637,6 +689,28 @@ There is a connection on the normal bundle of a leaf $L$:
 %\end{table}
 \end{BackToTheRoots}
 
+\begin{remark}
+$\mathup{Inner}(\tau_l)$: Trivial.
+
+$\mathup{Sym}(\tau_l)$: The image of a group morphism $\pi_1(L) \to \mathup{Diff}_0\mleft( \mathbb{R}^d \mright)$.
+\end{remark}
+\end{frame}
+
+\begin{frame}
+\begin{remark}
+$\mathup{Sym}(\tau_l)$ and $\mathup{Inner}(\tau_l)$ are in general infinite-dimensional! 
+\end{remark}
+
+\begin{definition}[Formal foliation]
+$X \in \mathcal{F}$ induces a derivation on $C^\infty(L)/C^\infty_0(L)$. The image of $\mathcal{F}$ under this is the \textbf{formal singular foliation}.
+\end{definition}
+
+\begin{remark}
+\begin{itemize}
+	\item $\tau_l$ a formal singular foliation.
+	\item $L$ a manifold (connected immersed submanifold of $M$).
+\end{itemize}
+\end{remark}
 \end{frame}
 
 \begin{frame}
