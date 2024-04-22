@@ -7,6 +7,7 @@
 \usepackage[makeroom]{cancel} %for crossing symbols
 \usepackage{leftindex} %For leftindex, making it possible to have nicely aligned left subscripts
 %\usepackage{calligra}
+\definecolor{MyDarkBlue}{rgb}{0.15,0.25,0.45}
 %\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} %For small \mathcal letters
 \makeatletter
 \DeclareFontEncoding{LS1}{}{}
@@ -126,6 +127,7 @@ National Center for Theoretical Sciences (National Taiwan University)
 \theoremstyle{remark}
 \newtheorem*{remark}{Remarks}
 \newtheorem*{idea}{Idea}
+\newtheorem*{danger}{Danger}
 \newtheorem*{motivation}{Motivation}
 \newtheorem*{summary}{Summary}
 \newtheorem*{situation}{Situation}
@@ -143,6 +145,11 @@ National Center for Theoretical Sciences (National Taiwan University)
 \AtBeginEnvironment{idea}{%
   \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
   \setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
+}
+
+\AtBeginEnvironment{danger}{%
+  \setbeamercolor{block title}{use=example text,fg=black,bg=red}
+  \setbeamercolor{block body}{parent=normal text,use=block title example,bg=red!10}
 }
 
 %\theoremstyle{definition}
@@ -417,7 +424,7 @@ Recall:
 Every integrable subbundle $E$ of $\mathrm{T} M$ corresponds to a regular foliation in $M$.
 \end{theorem}
 
-\begin{remark}
+\begin{remark}[$\Gamma(E)$ is involutive]
 Integrable:
 \bes
 [X, Y] \in \Gamma(E)
@@ -507,7 +514,7 @@ but $\mathcal{F}$ also encodes the information about the generators,
 {
 \setbeamertemplate{footline}{}
 
-\begin{frame}{Why locally finitely generated?}
+\begin{frame}{Why happens without being locally finitely generated?}
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.6\textwidth]{Infinite comb.png}
@@ -551,7 +558,7 @@ but $\mathcal{F}$ also encodes the information about the generators,
 %\end{frame}
 %}
 
-\subsection{Idea: Relation to gauge theory}
+\subsection{First steps}
 
 
 {
@@ -597,7 +604,7 @@ There is a connection on the normal bundle of a leaf $L$:
 
 {
 \setbeamertemplate{footline}{}
-\begin{frame}{Example of a transverse foliation $\tau$:}
+\begin{frame}{Example of a transverse foliation $\tau$ in $\mathbb{R}^d$:}
 %\begin{center}
 \begin{minipage}[]{0.45\textwidth}
 \begin{figure}
@@ -649,7 +656,7 @@ There is a connection on the normal bundle of a leaf $L$:
 %\begin{minipage}[]{0.45\textwidth}
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1.00\textwidth]{snake.png}
+		\includegraphics[width=.9\textwidth]{snake.png}
 	\label{fig:snake}
 \end{figure}
 %\end{center}
@@ -692,25 +699,75 @@ There is a connection on the normal bundle of a leaf $L$:
 \begin{remark}
 $\mathup{Inner}(\tau_l)$: Trivial.
 
-$\mathup{Sym}(\tau_l)$: The image of a group morphism $\pi_1(L) \to \mathup{Diff}_0\mleft( \mathbb{R}^d \mright)$.
+$\mathup{Sym}(\tau_l)$: The image of a group morphism $\pi_1(L) \to \mathup{Diff}\mleft( \mathbb{R}^d, 0 \mright)$.
 \end{remark}
 \end{frame}
 
 \begin{frame}
-\begin{remark}
-$\mathup{Sym}(\tau_l)$ and $\mathup{Inner}(\tau_l)$ are in general infinite-dimensional! 
-\end{remark}
+\begin{idea}
+	We guess:
+	\bes
+		\mathcal{F}
+		=
+		\mleft\{
+			\begin{matrix}
+				\text{Some map } \pi_1(L) \to \mathup{Diff}\left( \mathbb{R}^d, 0 \right) \text{ (at l)}
+				\\
+				\text{Bundle structure by } \tau_l, \mathup{Inner}(\tau_l), \mathup{Sym}(\tau_l), \dots
+			\end{matrix}
+		\mright\}
+	\ees
+	Thus, we want to classify $\mathcal{F}$ with given $L$ and $\tau_0 \coloneqq \tau_l$ (for a fixed $l \in L$).
+\end{idea}
 
+\pause
+
+\begin{danger}
+But $\mathup{Sym}(\tau_l)$ and $\mathup{Inner}(\tau_l)$ are in general infinite-dimensional, so that we have to deal with infinite-dimensional geometry!
+\end{danger}
+\end{frame}
+
+}
+
+\renewcommand\insertreferences{{\tiny Camille Laurent-Gengoux and Leonid Ryvkin, The neighborhood of a singular leaf, \newline \textit{Journal de l'École polytechnique}, Math. 8 (2021), 1037–1064.}}
+
+\begin{frame}
 \begin{definition}[Formal foliation]
-$X \in \mathcal{F}$ induces a derivation on $C^\infty(L)/C^\infty_0(L)$. The image of $\mathcal{F}$ under this is the \textbf{formal singular foliation}.
+$X \in \mathcal{F}$ induces a derivation on $\hat{C} \coloneqq C^\infty(M)/C^\infty_0(M)$, where $C^\infty_0(M)$ is the ideal of functions vanishing with all their derivatives along $L$. The image of $\mathcal{F}$ under this is the \textbf{formal singular foliation}.
 \end{definition}
 
 \begin{remark}
+$f \in \hat{C}$ a formal power series, w.r.t.\ $(x_1, \dots, x_d)$ as ``normal coordinates'':
+\bes
+	f = \sum_{i_1, \dots, i_d \geq 0} f_{i_1, \dots, i_d} x^{i_1}_1 \dots x^{i_d}_d
+\ees
+with $f_{i_1, \dots, i_d} \in C^\infty(L)$.
+\end{remark}
+
+%\begin{example}
+%For embedded submanifolds $L$:
+%\begin{itemize}
+	%\item Normal bundle 
+%\end{itemize}
+%\end{example}
+\end{frame}
+
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}{Our aim}
+\begin{remark}[Our assumptions]
 \begin{itemize}
 	\item $\tau_l$ a formal singular foliation.
 	\item $L$ a manifold (connected immersed submanifold of $M$).
 \end{itemize}
 \end{remark}
+
+\begin{center}
+	\begin{tikzcd}[ampersand replacement = \&]
+	\text{Foliation } \mathcal{F} \arrow{r} \arrow[bend left, color = red]{r}{\text{formal}} \& \arrow[bend left, color = MyDarkBlue]{l}{\text{does not need to be formal}} \arrow{l} \text{Classification}
+	\end{tikzcd}
+\end{center}
 \end{frame}
 
 \begin{frame}
@@ -1318,7 +1375,7 @@ Consider the Atiyah sequence of a principal $G$-bundle $P$: \vspace{-0.25cm}
 	\end{tikzcd}
 \end{center}
 \vspace{-0.25cm}
-with splitting $\mathbb{H} \colon \mathrm{T}L \to E$, where $\mathfrak{g}$ is the Lie algebra. Then
+with splitting $\mathbb{H} \colon \mathrm{T}L \to \mathup{T}P/G$, where $\mathfrak{g}$ is the Lie algebra. Then
 \bas
 \nabla_X \nu
 &=
