@@ -717,7 +717,7 @@ $\mathup{Sym}(\tau_l)$: The image of a group morphism $\pi_1(L) \to \mathup{Diff
 			\end{matrix}
 		\mright\}
 	\ees
-	Thus, we want to classify $\mathcal{F}$ with given $L$ and $\tau_0 \coloneqq \tau_l$ (for a fixed $l \in L$).
+	Thus, we want to classify $\mathcal{F}$ with given $L$ and $\tau_l$ (for a fixed $l \in L$).
 \end{idea}
 
 \pause
@@ -1462,6 +1462,23 @@ Fix a point $l \in L$ with transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)
 The associated connection on $\mathcal{G}$ is a multiplicative Yang-Mills connection and the one on $\mathcal{T}$ is a corresponding Yang-Mills connection.
 \end{proposition}
 
+\begin{proof}
+Recall
+\bes
+[p, g] \cdot [p, v]
+=
+[p, g \cdot v]
+\ees
+for all $[p, g] \in \mathcal{G}$ and $[p, v] \in \mathcal{T}$, and
+\bes
+\mathup{PT}^{\mathcal{T}}_\gamma\bigl( [p, v] \bigr)
+=
+\mleft[ \mathup{PT}^{P}_\gamma(p), v \mright].
+\ees
+\end{proof}
+
+\pause
+
 \begin{remark}
 Thus, we have a singular foliation on $\mathcal{T}$, which, by construction, admits $L$ as a leaf and $\tau_l$ as transverse data.
 \end{remark}
@@ -1484,6 +1501,11 @@ The reconstructed foliation is independent of the choice of connection on $P$.
 	\item $\tau = \overline{\mathup{Ad}(P)}$
 	\item Difference of two connections on $P$ has values in $\mathup{Ad}(P)$
 \end{itemize}
+Generators take this already into account:
+\bes
+\mathbb{H}(X) + \overline{\nu}
+\ees
+with $X \in \mathfrak{X}(L)$ and $\nu \in \Gamma(\mathup{Ad}(P))$.
 \end{proof}
 %\begin{center}
 %\begin{tikzcd}[ampersand replacement=\&]
