@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage[makeroom]{cancel} %for crossing symbols
 \usepackage{leftindex} %For leftindex, making it possible to have nicely aligned left subscripts
+\usepackage{wasysym}
 %\usepackage{calligra}
 \definecolor{MyDarkBlue}{rgb}{0.15,0.25,0.45}
 %\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} %For small \mathcal letters
@@ -1533,9 +1534,6 @@ Thus, we have a singular foliation on $\mathcal{T}$, which, by construction, adm
 \end{remark}
 \end{frame}
 
-{
-\setbeamertemplate{footline}{}
-
 \subsection{Independency of choice of connection}
 
 
@@ -1603,7 +1601,7 @@ In the simply connected case, the following are equivalent:
 \end{itemize}
 \end{theorem}
 
-{\pause
+\pause
 
 \begin{remark}
 $P$ is now finite-dimensional!
@@ -1612,7 +1610,41 @@ $P$ is now finite-dimensional!
 \begin{danger}
 Formal setting is here very important!
 \end{danger}
+
+\end{frame}
 }
+
+\renewcommand\insertreferences{{\tiny Corollary by Camille Laurent-Gengoux and Leonid Ryvkin, The neighborhood of a singular leaf, \newline \textit{Journal de l'\'Ecole Polytechnique}, Math.\ 8, 1037 - 1064, 2021.}}
+
+\begin{frame}{Examples}
+\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
+In the simply connected case, the following are equivalent:
+\begin{itemize}
+	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
+	\item Principal $\mathrm{Inner}(\tau_l)/\mathrm{Inner}(\tau_l)_{\geq 2}$-bundles $P$ over $L$
+\end{itemize}
+\end{theorem}
+
+\begin{corollary}
+L simply connected and $\tau_l$ is made of vector fields vanishing quadratically at 0. Then the unique singular foliation is the trivial one, \textit{i.e.}\ the trivial product of (L, $\mathfrak{X}(L)$) and $\mleft(\mathbb{R}^d, \tau_l \mright)$.
+\end{corollary}
+\end{frame}
+
+{
+\setbeamertemplate{footline}{}
+
+\begin{frame}{Examples}
+\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
+In the simply connected case, the following are equivalent:
+\begin{itemize}
+	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
+	\item Principal $\mathrm{Inner}(\tau_l)/\mathrm{Inner}(\tau_l)_{\geq 2}$-bundles $P$ over $L$
+\end{itemize}
+\end{theorem}
+
+\begin{corollary}[{[C.\ L.-G., S.-R.\ F.]}]
+L contractible. Then the unique singular foliation is the trivial one.
+\end{corollary}
 \end{frame}
 
 \begin{frame}{Examples}
@@ -1624,11 +1656,43 @@ In the simply connected case, the following are equivalent:
 \end{itemize}
 \end{theorem}
 
-\begin{example}
-
-\end{example}
+\begin{corollary}[{[C.\ L.-G., S.-R.\ F.]}]
+L simply connected. Then $\mathcal{F}$ is the trivial foliation if and only if it admits a flat $\mathcal{F}$-connection.
+\end{corollary}
 \end{frame}
+
+
+\begin{frame}{Examples {[C.\ L.-G., S.-R.\ F.]}}
+\setbeamercovered{invisible}
+%\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
+%In the simply connected case, the following are equivalent:
+%\begin{itemize}
+	%\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
+	%\item Principal $\mathrm{Inner}(\tau_l)/\mathrm{Inner}(\tau_l)_{\geq 2}$-bundles $P$ over $L$
+%\end{itemize}
+%\end{theorem}
+
+%\begin{example}[]
+$L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $\tau_l$:
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1.00\textwidth]{Circles and Spirals.png}
+	\label{fig:Circles and Spirals}
+\end{figure}
+
+\pause
+
+\hspace{4.5cm}
+\smiley{} 
+\hspace{2.5cm}
+\frownie{}
+
+%\end{example}
+\end{frame}
+
 }
+
 
 %\subsection{General situation}
 %{
@@ -1654,7 +1718,7 @@ In the simply connected case, the following are equivalent:
 %\end{theorem}
 %
 %\end{frame}
-}
+
 \thispagestyle{empty}
 \topmargin -3.46 cm
 \vspace*{\fill}
