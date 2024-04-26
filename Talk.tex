@@ -918,7 +918,7 @@ where $X \in \mathfrak{X}(L)$, $\mathbb{H}(X)$ its projectable horizontal lift, 
 	\label{fig:FoliationconnectionSechs}
 \end{figure}
 \begin{idea}
-Fix $l \in L$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
+Fix $l \in L$, given $\tau$ and $\mathbb{H}$. Reconstruct $\mathcal{F}$.
 \bas
 \mleft[ \mathbb{H}(X) + \overline{\nu}, \mathbb{H}\mleft({X^\prime}\mright) + \overline{\mu} \mright]
 &=
@@ -1057,21 +1057,21 @@ What are Ehresmann connections, preserving $\mathcal{G}$-actions?
 \begin{definition}[LGB actions]
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&, column sep = small, row sep = small]
-	 \& \mathcal{G} \arrow[bend right]{dl} \arrow{d}{\pi_{\mathcal{G}}} \\
-	\mathcal{T} \arrow{r}{\pi} \& L
+	 \mathcal{G} \arrow[bend left]{dr} \arrow{d}{\pi_{\mathcal{G}}} \& \\
+	L \& \mathcal{T} \arrow{l}{\pi}
 	\end{tikzcd}
 \end{center}
-A \textbf{right-action of $\mathcal{G}$ on $\mathcal{T}$} is a smooth map 
+A \textbf{left-action of $\mathcal{G}$ on $\mathcal{T}$} is a smooth map 
 %\bas
-$\mathcal{T} * \mathcal{G} \coloneqq \mathcal{T} \leftindex^{}_{\pi}\times_{\pi_{\mathcal{G}}} \mathcal{G} \to \mathcal{T}$,
-$(p, g) \mapsto p \cdot g$,
+$\mathcal{G} * \mathcal{T} \coloneqq \mathcal{G} \leftindex^{}_{\pi_{\mathcal{G}}}\times_{\pi} \mathcal{T} \to \mathcal{T}$,
+$(g, p) \mapsto g \cdot p$,
 %\eas
 satisfying the following properties:
-\ba\label{InvarianceOffUnderGAction}
-\pi(p \cdot g) &= \pi(p),\\
-(p \cdot g) \cdot h &= p \cdot (gh),\\
-p \cdot e_{\pi(p)} &= p
-\ea
+\bas
+\pi(g \cdot p) &= \pi(p),\\
+h \cdot (g \cdot p) &= (hg) \cdot p,\\
+e_{\pi(p)} \cdot p &= p
+\eas
 for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p)}$ is the neutral element of $\mathcal{G}_{\pi(p)}$.
 \end{definition}
 \end{frame}
@@ -1115,11 +1115,10 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \filldraw [fill=gray!20!white, draw=white] (3.5,2.5) to[out=280,in=90](3.75,0) to[out=270,in=80] (3.5,-2.5) -- (5,-2.5)  to[out=80,in=270](5.25,0) to[out=90,in=280] (5,2.5) -- cycle;
 \draw (4.25,2.5) to[out=280,in=95](4.41,1) to[out=275,in=85] (4.41,-1) to[out=265,in=80] (4.25,-2.5); %draw with middle section for precise point placement
 
-\draw (4,-1) node {\textcolor[rgb]{1,0,0}{$p$}};
-\draw [<-, draw=blue] (5,1) to[out=275,in=85] (5,-1);
-\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
-\filldraw [fill=red, draw=red] (4.41,1) circle (1pt);
-\filldraw [fill=red, draw=red] (4.41,-1) circle (1pt);
+
+
+
+
 \draw (5.75,2.5) to[out=280,in=90](6,0) to[out=270,in=80] (5.75,-2.5);
 \draw (7.25,2.5) to[out=280,in=90](7.5,0) to[out=270,in=80] (7.25,-2.5);
 \draw (2.75,2.475) to[out=280,in=90](3,0) to[out=270,in=80] (2.75,-2.475);
@@ -1127,16 +1126,16 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 %\draw (4.75,2) node {$\mathcal{T}_x$};
 %\draw (4.95,1.5) node {$\cong G$};
 %\draw (9.5,-3.5) node {$M$};
-\draw (5,2) node {$\mathcal{T}_U$};
+\draw (5,2) node {$\mathcal{G}_U$};
 \draw (3.5,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
 \draw (4.25,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (5,-3.6) node {$)$};
 \draw (4.25, -3) node {$U$};
-\draw (0,0) node {$\mathcal{T}$};
+\draw (0,0) node {$\mathcal{G}$};
 \draw [->] (0,-0.4) -- (0,-3.1);
-\draw (0.6,-1.75) node {$\pi$};
-\draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$p \cdot g$}};
+\draw (0.6,-1.75) node {$\pi_{\mathcal{G}}$};
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \draw (10.5,-3.5) to[out=10,in=170] (14.75,-3.5) to[out=350,in=190] (19,-3.5); %hori M
 \filldraw [fill=gray!20!white, draw=white] (14,2.5) to[out=280,in=90](14.25,0) to[out=270,in=80] (14,-2.5) -- (15.5,-2.5)  to[out=80,in=270](15.75,0) to[out=90,in=280] (15.5,2.5) -- cycle; %gray area
@@ -1146,21 +1145,30 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \draw (17.75,2.5) to[out=280,in=90](18,0) to[out=270,in=80] (17.75,-2.5); %5
 
 \draw (13.25,2.475) to[out=280,in=90](13.5,0) to[out=270,in=80] (13.25,-2.475); %2
-\filldraw [fill=blue, draw=blue] (15,0) circle (1pt);
-\draw (15.5,0) node {\textcolor[rgb]{0,0,1}{$g$}};
 
-\draw (19,0) node {$\mathcal{G}$}; %These three lines are for LGB projection
+
+
+\draw (19,0) node {$\mathcal{T}$}; %These three lines are for LGB projection
 \draw [->] (19,-0.4) -- (19,-3.1);
-\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
+\draw (18.5,-1.75) node {$\pi$};
 
-\draw (15.5,2) node {$\mathcal{G}_U$};
+\draw (15.5,2) node {$\mathcal{T}_U$};
 \draw (14,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
 \draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (15.5,-3.6) node {$)$};
 \draw (14.75, -2.9) node {$U$};
 
-\path[<-] (8.5,0) edge [bend left] (11,0);
+\path[->] (8.5,0) edge [bend left] (11,0);
+
+\filldraw [fill=red, draw=red] (14.96,1) circle (1pt);
+\filldraw [fill=red, draw=red] (14.96,-1) circle (1pt);
+\draw (14.05,1) node {\textcolor[rgb]{1,0,0}{$p \cdot g$}};
+\draw (14.55,-1) node {\textcolor[rgb]{1,0,0}{$p$}};
+\draw [<-, draw=blue] (15.55,1) to[out=275,in=85] (15.55,-1);
+\filldraw [fill=blue, draw=blue] (4.46,0) circle (1pt);
+\draw (16.05,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
+\draw (4.95,0) node {\textcolor[rgb]{0,0,1}{$g$}};
 \end{tikzpicture}
 \end{figure}
 %\pause
@@ -1244,7 +1252,7 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \begin{frame}{Connection on $\mathcal{T}$: Revisiting the classical setup}
 \setbeamercovered{invisible}
 	\begin{minipage}[]{0.45\textwidth} 
-	If $\mathcal{G}$ is trivial, $\sigma \equiv g$ constant, and \textcolor[rgb]{0,0.58,0}{$H$} a connection:
+	If $\mathcal{G}$ is trivial, and \textcolor[rgb]{0,0.58,0}{$H$} a connection:
 	\begin{figure}
 	\begin{tikzpicture}[scale=1.2]
 		%Gray area
@@ -1268,7 +1276,7 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 		\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
 		\draw (3,2.2) node {$\mathcal{T}_U$};
 		\draw (4.71,-0.6) node {$X$};
-		\draw (5,1.4) node {$\mathrm{D}_pr_g(X)$};
+		\draw (5,1.4) node {$\mathrm{D}_pl_g(X)$};
 		%\draw (5.5,1.56) node {$\thicksim \mathrm{D}_x\sigma(X)$};
 		%Text
 	\end{tikzpicture}
@@ -1282,9 +1290,9 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 		%\mathrm{D}_p r_g (X)
 		%&=
 		%\mleft.\frac{\mathrm{d}}{\mathrm{d}t}\mright|_{t=0}\mleft( \alpha \cdot g \mright),
-		\mathup{PT}^{\mathcal{T}}_\gamma(p \cdot g)
+		\mathup{PT}^{\mathcal{T}}_\gamma(g \cdot p)
 		&=
-		\mathup{PT}^{\mathcal{T}}_\gamma(p) \cdot g
+		g \cdot \mathup{PT}^{\mathcal{T}}_\gamma(p),
 		%\\
 		%&=
 		%\mathup{PT}^{\mathcal{T}}_\alpha(p) \cdot \mathup{PT}^{\mathcal{G}}_\alpha (g)
@@ -1301,9 +1309,9 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 	\begin{remark}[Integrated case]
 	Ansatz: Introduce connection on $\mathcal{G}$,
 		\bas
-		\mathup{PT}^{\mathcal{T}}_\gamma(p \cdot g)
+		\mathup{PT}^{\mathcal{T}}_\gamma(g \cdot p)
 		&=
-		\mathup{PT}^{\mathcal{T}}_\gamma(p) \cdot \mathup{PT}^{\mathcal{G}}_{\gamma} (g).
+		\mathup{PT}^{\mathcal{G}}_{\gamma} (g) \cdot \mathup{PT}^{\mathcal{T}}_\gamma(p).
 		\eas
 	\end{remark}
 	\pause
@@ -1322,26 +1330,24 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 A surjective submersion $\pi \colon \mathcal{T} \to L$ so that one has a commuting diagram
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\& \arrow[bend right]{ld} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
-    %\arrow{l} G 
-    \\
-	\mathcal{T} \arrow{r}{\pi} \& L
+	 \mathcal{G} \arrow[bend left]{dr} \arrow{d}{\pi_{\mathcal{G}}} \& \\
+	L \& \mathcal{T} \arrow{l}{\pi}
 	\end{tikzcd}
 \end{center}
 \begin{enumerate}
 	\item \textbf{Ehresmann connection:} 
 	\bas
-	\mathup{PT}_\gamma^{\mathcal{T}}(p \cdot g)
+	\mathup{PT}_\gamma^{\mathcal{T}}(g \cdot p)
 	&=
-	\mathup{PT}_\gamma^{\mathcal{T}}(p)
-	\cdot
 	\mathup{PT}_{\gamma}^{\mathcal{G}}(g)
+	\cdot
+	\mathup{PT}_\gamma^{\mathcal{T}}(p)
 	\eas
 	\item \textbf{Yang-Mills connection:} Additionally
 	\bas
 	\mathup{PT}_{\gamma_0}^{\mathcal{T}}(p)
 	&=
-	p \cdot g_{\gamma_0}
+	g_{\gamma_0} \cdot p
 	\eas
 	for some $g_{\gamma_0} \in \mathcal{G}^0_{\pi(p)}$, where $\gamma_0$ is a contractible loop.
 \end{enumerate}
@@ -1429,7 +1435,7 @@ R_{\nabla}
 Consider the Atiyah sequence of a principal $G$-bundle $P$: \vspace{-0.25cm}
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	( P \times \mathfrak{g} ) / G \arrow[hook]{r}
+	\mathcal{g} \coloneqq ( P \times \mathfrak{g} ) / G \arrow[hook]{r}
 	\& \mathup{T}P/G \arrow[two heads]{r}
 	\& \mathup{T}L \arrow[bend right, swap]{l}{\mathbb{H}}
 	\end{tikzcd}
@@ -1618,7 +1624,7 @@ $P$ is now finite-dimensional!
 \end{remark}
 \pause
 \begin{danger}
-Formal setting is here very important!
+Formal setting is here very important! Especially here is where one has to think about real-analytic conditions for the general case.
 \end{danger}
 
 \end{frame}
@@ -1674,15 +1680,6 @@ L simply connected. Then $\mathcal{F}$ is the trivial foliation if and only if i
 
 \begin{frame}{Examples {[C.\ L.-G., S.-R.\ F.]}}
 \setbeamercovered{invisible}
-%\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
-%In the simply connected case, the following are equivalent:
-%\begin{itemize}
-	%\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
-	%\item Principal $\mathrm{Inner}(\tau_l)/\mathrm{Inner}(\tau_l)_{\geq 2}$-bundles $P$ over $L$
-%\end{itemize}
-%\end{theorem}
-
-%\begin{example}[]
 $L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $\tau_l$:
 
 \begin{figure}[htbp]
@@ -1690,15 +1687,17 @@ $L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $
 		\includegraphics[width=1.00\textwidth]{Circles and Spirals.png}
 	\label{fig:Circles and Spirals}
 \end{figure}
+\end{frame}
 
-\pause
+\begin{frame}{Examples {[C.\ L.-G., S.-R.\ F.]}}
+\setbeamercovered{invisible}
+$L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $\tau_l$:
 
-\hspace{4.5cm}
-\smiley{} 
-\hspace{2.5cm}
-\frownie{}
-
-%\end{example}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1.00\textwidth]{Circles and Spirals with princ.png}
+	\label{fig:Circles and Spirals with princ}
+\end{figure}
 \end{frame}
 
 }
@@ -1733,7 +1732,7 @@ $L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $
 \topmargin -3.46 cm
 \vspace*{\fill}
 \begin{center}
-\huge \textbf{Thank you!}
+\huge \textbf{Thank you!} \smiley{}
 \end{center}
 \vspace*{\fill}
 
