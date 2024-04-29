@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  29 APR 2024 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  29 APR 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Talk.tex
-(Talk.tex
+**"./Talk Alternative.tex"
+(Talk Alternative.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
 (C:\Users\kelru\AppData\Roaming\MiKTeX\2.9\tex/latex/beamer\beamer.cls
@@ -1364,8 +1364,8 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 165.
 (C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (Talk.aux)
-\openout1 = `Talk.aux'.
+) (Talk Alternative.aux)
+\openout1 = `"Talk Alternative.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
 LaTeX Font Info:    ... okay on input line 165.
@@ -1512,9 +1512,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 165.
- (Talk.out) (Talk.out)
+ (Talk Alternative.out) (Talk Alternative.out)
 \@outlinefile=\write6
-\openout6 = `Talk.out'.
+\openout6 = `"Talk Alternative.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 165.
@@ -1594,14 +1594,15 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `Talk.bcf'.
+\openout5 = `"Talk Alternative.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Talk.bbl' found.
- (Talk.bbl)
+Package biblatex Info: ... file '"Talk Alternative".bbl' found.
+ (Talk Alternative.bbl)
 Package biblatex Info: Reference section=0 on input line 165.
 Package biblatex Info: Reference segment=0 on input line 165.
- (Talk.nav)
+
+(Talk Alternative.nav)
 Overfull \hbox (2.12502pt too wide) in paragraph at lines 165--165
 [][][][]  
  []
@@ -1611,7 +1612,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 171--171
 [][][][]  
  []
 
-<NCTS.png, id=148, 562.60187pt x 174.6525pt>
+<NCTS.png, id=132, 562.60187pt x 174.6525pt>
 File: NCTS.png Graphic file (type png)
 <use NCTS.png>
 Package pdftex.def Info: NCTS.png  used on input line 171.
@@ -1640,7 +1641,7 @@ Overfull \vbox (39.06465pt too high) detected at line 171
 
 {C:/Users/kelru/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 rm.enc} <./NCTS.png>]
-<Research circles I.pdf, id=236, 384.30576pt x 158.05048pt>
+<Research circles I.pdf, id=212, 384.30576pt x 158.05048pt>
 File: Research circles I.pdf Graphic file (type pdf)
 <use Research circles I.pdf>
 Package pdftex.def Info: Research circles I.pdf  used on input line 190.
@@ -1714,7 +1715,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [6
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<magnetique.png, id=828, 552.0625pt x 546.04pt>
+<magnetique.png, id=732, 552.0625pt x 546.04pt>
 File: magnetique.png Graphic file (type png)
 <use magnetique.png>
 Package pdftex.def Info: magnetique.png  used on input line 354.
@@ -1722,7 +1723,7 @@ Package pdftex.def Info: magnetique.png  used on input line 354.
  [7
 
  <./magnetique.png>]
-<Lonely Lasagna.png, id=965, 223.58531pt x 186.6975pt>
+<Lonely Lasagna.png, id=853, 223.58531pt x 186.6975pt>
 File: Lonely Lasagna.png Graphic file (type png)
 <use Lonely Lasagna.png>
 Package pdftex.def Info: Lonely Lasagna.png  used on input line 379.
@@ -1842,7 +1843,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 590--590
 [][][][]  
  []
 
-<Foliation connection.png, id=2620, 672.01062pt x 390.45876pt>
+<Foliation connection.png, id=2324, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
 Package pdftex.def Info: Foliation connection.png  used on input line 590.
@@ -1890,7 +1891,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
 [24
 
 ]
-<snake.png, id=3011, 609.27625pt x 503.8825pt>
+<snake.png, id=2667, 609.27625pt x 503.8825pt>
 File: snake.png Graphic file (type png)
 <use snake.png>
 Package pdftex.def Info: snake.png  used on input line 680.
@@ -1978,24 +1979,9 @@ Overfull \vbox (0.83241pt too high) detected at line 982
 
 ] [44
 
-]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1077--1077
-[][][][]  
- []
+] [45
 
-
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[45
-
-]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 1180--1180
- [] 
- []
-
-[46
+] [46
 
 ] [47
 
@@ -2007,28 +1993,21 @@ Overfull \hbox (7.06024pt too wide) in paragraph at lines 1180--1180
 
 ] [51
 
-] [52
+]
+Overfull \vbox (3.33218pt too high) detected at line 1537
+ []
 
-] [53
+[52
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1456--1456
-[][][][]  
+Overfull \vbox (3.33218pt too high) detected at line 1537
  []
 
+[53
 
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
+] [54
 
-[54
-
-]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[55
+] [55
 
 ] [56
 
@@ -2038,40 +2017,8 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ] [59
 
-] [60
-
-] [61
-
-] [62
-
-] [63
-
 ]
-Overfull \vbox (0.65005pt too high) detected at line 1551
- []
-
-[64
-
-]
-Overfull \vbox (0.65005pt too high) detected at line 1551
- []
-
-[65
-
-] [66
-
-] [67
-
-] [68
-
-] [69
-
-] [70
-
-] [71
-
-]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1647--1647
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1633--1633
 [][][][]  
  []
 
@@ -2080,71 +2027,71 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[72
+[60
 
-] [73
+] [61
 
-] [74
+] [62
 
 ]
-<Circles and Spirals.png, id=8793, 1051.67906pt x 450.9347pt>
+<Circles and Spirals.png, id=6566, 1051.67906pt x 450.9347pt>
 File: Circles and Spirals.png Graphic file (type png)
 <use Circles and Spirals.png>
-Package pdftex.def Info: Circles and Spirals.png  used on input line 1690.
+Package pdftex.def Info: Circles and Spirals.png  used on input line 1676.
 (pdftex.def)             Requested size: 307.28987pt x 131.75853pt.
- [75
+ [63
 
  <./Circles and Spirals.png>]
-<Circles and Spirals with princ.png, id=8916, 1025.33063pt x 476.53032pt>
+<Circles and Spirals with princ.png, id=6673, 1025.33063pt x 476.53032pt>
 File: Circles and Spirals with princ.png Graphic file (type png)
 <use Circles and Spirals with princ.png>
-Package pdftex.def Info: Circles and Spirals with princ.png  used on input line 1701.
+Package pdftex.def Info: Circles and Spirals with princ.png  used on input line 1687.
 (pdftex.def)             Requested size: 307.28987pt x 142.81477pt.
- [76
+ [64
 
  <./Circles and Spirals with princ.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1738--1738
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1724--1724
 [][][][]  
  []
 
-[77
+[65
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1770.
+(Font)              <5> on input line 1756.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1770.
- [78
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1756.
+ [66
 
 ]
 \tf@nav=\write7
-\openout7 = `Talk.nav'.
+\openout7 = `"Talk Alternative.nav"'.
 
 \tf@toc=\write8
-\openout8 = `Talk.toc'.
+\openout8 = `"Talk Alternative.toc"'.
 
 \tf@snm=\write9
-\openout9 = `Talk.snm'.
+\openout9 = `"Talk Alternative.snm"'.
 
- (Talk.aux)
+ (Talk Alternative.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
-Package rerunfilecheck Info: File `Talk.out' has not changed.
+Package rerunfilecheck Info: File `"Talk Alternative".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'Talk.run.xml'.
-\openout1 = `Talk.run.xml'.
+Package logreq Info: Writing requests to '"Talk Alternative".run.xml'.
+\openout1 = `"Talk Alternative.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52381 strings out of 474461
- 1211137 string characters out of 5750453
- 3128866 words of memory out of 5000000
- 73588 multiletter control sequences out of 15000+600000
+ 51956 strings out of 474461
+ 1200976 string characters out of 5750453
+ 3117246 words of memory out of 5000000
+ 73190 multiletter control sequences out of 15000+600000
  652864 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,23n,123p,1131b,8501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,23n,123p,1145b,8501s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\kelru\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/wasy/dpi1244\wasy10.pk><C:/Users/kelru/AppData/Roamin
 g/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pfb><C:/Users/kelru/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bk
 aiu57.pfb><C:/Users/kelru/AppData/Roaming/MiKTeX/2.9/fonts/type1/arphic/bkaiu/bkaiu5b.pfb><C:/Users/kelru/AppData/Roamin
@@ -2163,9 +2110,9 @@ lic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><
 public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
 rs/kelru/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (78 pages, 2196386 bytes).
+Output written on "Talk Alternative.pdf" (66 pages, 1865673 bytes).
 PDF statistics:
- 9354 PDF objects out of 10688 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 4109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7072 PDF objects out of 7423 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 3527 words of extra memory for PDF output out of 10000 (max. 10000000)
 

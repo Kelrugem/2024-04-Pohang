@@ -1163,11 +1163,11 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 
 \filldraw [fill=red, draw=red] (14.96,1) circle (1pt);
 \filldraw [fill=red, draw=red] (14.96,-1) circle (1pt);
-\draw (14.05,1) node {\textcolor[rgb]{1,0,0}{$g \cdot p$}};
+\draw (14.05,1) node {\textcolor[rgb]{1,0,0}{$p \cdot g$}};
 \draw (14.55,-1) node {\textcolor[rgb]{1,0,0}{$p$}};
 \draw [<-, draw=blue] (15.55,1) to[out=275,in=85] (15.55,-1);
 \filldraw [fill=blue, draw=blue] (4.46,0) circle (1pt);
-\draw (16.05,0) node {\textcolor[rgb]{0,0,1}{$g \cdot$}};
+\draw (16.05,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
 \draw (4.95,0) node {\textcolor[rgb]{0,0,1}{$g$}};
 \end{tikzpicture}
 \end{figure}
@@ -1271,9 +1271,9 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 		\draw [->, thick] (4.41,1) -- (4.71,1.12);
 		%\draw [<-,dotted,thick] (4.63,2) -- (4.71,1.12);
 		%Labels
-		\draw (3.2,1) node {\textcolor[rgb]{0,0.58,0}{$H_{g \cdot p}$}};
+		\draw (3.2,1) node {\textcolor[rgb]{0,0.58,0}{$H_{p \cdot g}$}};
 		\draw (3.2,-1) node {\textcolor[rgb]{0,0.58,0}{$H_p$}};
-		\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$g \cdot$}};
+		\draw (5.5,0) node {\textcolor[rgb]{0,0,1}{$\cdot g$}};
 		\draw (3,2.2) node {$\mathcal{T}_U$};
 		\draw (4.71,-0.6) node {$X$};
 		\draw (5,1.4) node {$\mathrm{D}_pl_g(X)$};
@@ -1744,26 +1744,17 @@ $L = \mathbb{S}^2$, $M = \mathrm{T}\mathbb{S}^2$. Let us consider two possible $
 \begin{frame}{Total classification}
 
 \begin{remark}
-$\mathup{Inner}(\tau_l)$ is a normal subgroup of $\mathup{Sym}(\tau_l)$, thus we have a quotient:
-\begin{center}
-	\begin{tikzcd}[ampersand replacement = \&]
-	\mathup{Inner}(\tau_l) \arrow[hook]{r}
-	\&
-	\mathup{Sym}(\tau_l) \arrow[two heads]{r}
-	\&
-	\mathup{Out}(\tau_l)
-	\end{tikzcd}
-\end{center}
+
 \end{remark}
 
 \begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
 The following are equivalent:
 \begin{itemize}
-	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$,
+	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
 	\item 
 	\begin{enumerate}
-\item a group morphism $\Xi \colon \pi_1(L) \longrightarrow {\mathrm{Out}}(\tau_l) $, and
-\item a finite-dimensional principal $H / \mathup{Inner}(\tau_l)_{\geq 2}$-bundle, with $H$ a subgroup of $\mathup{Sym}(\tau_l)$ containing $\mathup{Inner}(\tau_l)$.
+\item a group morphism $\phi \colon \pi_1(L) \longrightarrow {\mathrm{Out}}(\mathcal T_0)  $ (called \pairing{}), with ${\mathrm{Out}}(\mathcal T_0)$ the group of outer symmetries of $ \mathcal T_0$, and
+\item some $R$-principal bundle extending the Galois cover associated to the kernel of $ \phi$, with $R$ some finite dimensional Lie group to be described in the text.
 \end{enumerate}
 \end{itemize}
 \end{theorem}
